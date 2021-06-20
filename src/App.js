@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Input from './components/ExampleOne/Input'
+// import Form from './components/ExampleTwo/Form'
+// import Key from './components/ExampleThree/Key'
+// import Context from './components/ExampleFour/Context'
+// import Consumer from './components/ExampleFour/Consumer'
 
 function App() {
+  // const [theme, setTheme] = useState('light')
+  console.log('app is rendered')
+
+  // const toggleTheme = () => {
+  //   setTheme(previousState => (
+  //     previousState === 'light' ? 'dark' : 'light'
+  //   ))
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Input />
     </div>
   );
 }
